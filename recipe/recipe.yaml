@@ -1,5 +1,5 @@
 context:
-  version: "0.1.0"
+  version: "0.2.0"
 
 package:
   name: georaffer
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/g/georaffer/georaffer-${{ version }}.tar.gz
-  sha256: fc6d7237982430ab7fa1361444832fa3bc2efbe922c0767608994d93c629e245
+  sha256: f1b103ae7ab641c172017e00756166c4e7e5fc70f57ed9aea2853d405e572013
 
 build:
   number: 0
@@ -25,10 +25,11 @@ requirements:
   run:
     - python >=${{ python_min }}
     - requests >=2.20
+    - truststore >=0.10
     - laspy >=2.0
     - lazrs-python >=0.7
     - numpy >=1.20
-    - numba >=0.50
+    - numba >=0.62
     - pillow >=9.0
     - rasterio >=1.2
     - utm >=0.7
