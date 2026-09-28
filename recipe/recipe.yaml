@@ -39,7 +39,9 @@ tests:
   - python:
       imports:
         - georaffer
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
   - script:
       - georaffer --help
 
